@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: 'YourBodyFont', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #8E2DE2, #4A00E0);
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+nav {
+    background-color: #4A00E0; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end; 
+    padding-right: 20px; 
+}
+
+nav li {
+    position: relative; 
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'YourBodyFont', sans-serif;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFD700; 
+    transform: scale(1.1);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #FFD700; 
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #FFD700; 
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.amenities {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.amenities img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.amenities img:hover {
+    transform: scale(1.05);
+}
+
+.menu {
+    padding: 20px;
+    background: linear-gradient(135deg, #f2d497, #f49e09);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.menu h2 {
+    font-family: 'YourHeaderFont', sans-serif;
+    margin-top: 0;
+    color: #8616af;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    background-color: #e7e7e7;
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.item-details h3 {
+    margin: 0;
+    color: #8616af;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: linear-gradient(90deg, #8E2DE2, #4A00E0);
+    color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.email-link {
+    color: #FFD700; /* Gold color for email link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover {
+    color: #fff;
+}
+
+.email-link i {
+    margin-right: 5px;
+    color: #FFD700;
+}
+
